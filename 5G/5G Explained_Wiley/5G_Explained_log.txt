@@ -1,0 +1,676 @@
+﻿
+
+
+------------------------------------------------------------------------------
+//////////////STARTING NEW BOOK "5G EXPLAINED" (Dr. Jyrki T. J. Penttinen)
+https://learning.oreilly.com/library/view/5g-explained/9781119275688/f04.xhtml
+
+///notes, highlights..
+
+.preface
+
+5G will also change the fundamental philosophy of the networks by modernizing the old reference architecture model infrastructure to support service‐based architecture and virtualized environment where only the essential network functions are utilized as instances per need.
+For this purpose, 5G relies considerably on the increasing number of data centers on the field. They have common, virtualized hardware that paves the way for optimized utilization of physical resources while the software‐based network functions can be utilized much more dynamically, efficiently, and faster compared to older network architectures that are based on dedicated hardware and software per each network element. This modernization of the core networks will provide highly useful techniques such as network slicing, which facilitates the network optimization for different use cases in a highly dynamic manner.
+
+It should be noted that the 3GPP Release 15 represents merely the first phase of 5G, which works for the introduction of key 5G services while 3GPP still maintains and enhances technical specifications of the parallel systems for 2G (GSM), 3G (UMTS/HSPA), and 4G (LTE/LTE‐Advanced).
+
+There will be new and enhanced 5G specifications, too, to comply with the strict 5G functional and performance requirements of the IMT‐2020 (International Mobile Telecommunications for 5G), which has been defined by ITU (International Telecommunications Union). 
+So, the first 5G networks complying fully with the IMT‐2020 requirements are expected to be deployed as of 2020.
+
+---
+ch1
+
+1.1 Overview
+
+..
+."Regardless of the high performance of 4G systems, the telecom industry has identified a need for faster end‐user data rates due to constantly increasing performance requirements of the evolving multimedia. 5G systems have thus been designed to cope with these challenges by providing more capacity and enhanced user experiences that solve all the current needs even for the most advanced virtual reality applications. "
+..
+
+
+1.2 What is 5G?
+
+."The term 5G refers to the fifth generation of mobile communication systems. ...  will comply with the forthcoming International Mobile Telecommunications (IMT)‐2020 requirements of ITU‐R (radio section of the International Telecommunications Union)."
+
+The industry seems to agree that 5G is, in fact, a combination of 
+	novel solutions and existing systems basing on LTE, LTE-A, 
+	non‐3GPP access technologies such as Wi‐Fi, which jointly contributes to 
+		optimizing performance (providing at least 10 times higher data rate compared to now),
+		 lower latency (including single‐digit range in terms of millisecond), 
+			support of increased capacity demands for huge amounts of simultaneously connected consumer and machine‐to‐machine, or M2M, devices.
+
+.mno, device manufacturers have been driving 5g via demos ,trials -> beneficial for selections of optimal solutions in standardization
+	-> expedited system def schedules
+.interntl standardization has come up with jointly agreed 5g def -> 5g interoperability
+
+.apart from higher data rates, an equally important aspect of the new system will be the ability to manage huge amount of simultaneously communicating IoT devices – perhaps thousands under a single radio cell
+
+1.3 Background
+
+.3G refers to a set of systems that comply with the IMT‐2000 (International Mobile Telecommunications for 3G) requirements designed by the ITU. "
+
+.cdma2000, Universal Mobile Telecommunications System (UMTS)/High Speed Packet Access (HSPA) and their respective evolved systems belong to the third generation 
+
+.there are only two systems fulfilling the official, globally recognized 4G category as defined in IMT‐Advanced, and they are the 3GPP LTE‐Advanced as of Release 10, and the IEEE 802.16m referred to also as WiMAX2
+
+.Phase 2 of 5G as defined by 3GPP is still set to the 2020 time frame. 
+.As soon as available, the 5G era will represent something much more than merely a set of high‐performance mobile networks. It will, in fact, pave the way for enabling a seamlessly connected society with important capabilities to connect a large number of always‐on IoT devices.
+
+
+1.4 Research
+
+.".. several research programs established to study the feasibility and performance of new ideas in academic level."
+	// e.g. FP7, METIS, coop EU/Brazil
+	// EU sponsored - EU want to lead global dev
+
+."As stated by EU, the 5G of telecommunications systems will be the most critical building block of our digital society in 2020–2030."
+
+."EU states that 5G will provide virtually ubiquitous, ultra‐high bandwidth connectivity not only to individual users but also to connected objects. Therefore, it is expected that the future 5G infrastructure will serve a wide range of applications and sectors, including professional uses such as assisted driving, eHealth, energy management, and possibly safety applications"
+
+."the European Commission aims to coordinate the use of the 700 MHz band for mobile services to provide higher‐speed and higher‐quality broadband and cover wider areas, including rural and remote regions. The concrete goal of EU is to provide mobile broadband speeds beyond 100 Mb/s"
+
+
+1.5 Challenges for Electronics
+
+.expected 5G key ability: high-energy effiencey to cope with a big amount of low-power IoT devices in the field
+.benefits: better cost‐efficiency, sustainability, and widening the network coverage to remote areas
+.base technologies for facilitating low energy
+	.advanced beamforming
+	.radio interface optimization via user-data and system-control plane separation
+
+."The systems also need to be developed at the component level for both networks and devices. .."
+	e.g. Autonomously functioning remote IoT devices must function reliably typically several years without human interaction or maintenance. 
+		-> advances in the more efficient battery technologies are key 
+		.very small devices such as consumer wearables and M2M sensor equipment may require much smaller electronical component form factors, including tiny wafer‐level subscriber modules that still comply with the demanding reliability and durability requirements in harsh conditions. 
+		.need for enhanced security aspects will require innovative solutions in the hardware (HW) and software (SW) levels
+
+
+1.6 Expected 5G in Practice
+
+.figure: data rate development of 3,4,5G
+
+."(...)In addition to the “traditional” type of IoT devices such as wearable devices with integrated mobile communications systems (smart watch), car communications systems and utility meters, there are also emerging technology areas such as self‐driving cars that require high reliability as for the functionality as well as for the secure communications, which 5G can tackle."
+
+."(...) a huge growth in connectivity and volume of data communications. This, in turn, is possible to provide via advanced, multilayer densification in the radio network planning and providing much faster data throughput, considerably lower latency, and higher reliability and density of simultaneously communicating devices"
+
+."(...)In practice, the above‐mentioned goals are possible to achieve only via renewed radio interfaces, including totally new, higher frequencies and capacity enhancements"
+
+
+1.7 5G and Security
+
+."As for the security assurance of the new 5G era, there can be impacts expected in the “traditional” forms of SIM (Subscriber Identity Module), Universal Integrated Circuit Card (UICC), and subscription types, as the environment will be much more dynamic.(...)"
+
+."The cloud‐based security such as tokenization and host card emulation (HCE), as well as the development of the device‐based technologies like Trusted Execution Environment (TEE) may be in key positions in the 5G era, although the traditional SIM/UICC can still act as a base for the high security demands."
+
+
+1.8 Motivations (for 5G over 4G et al)
+
+."(...) The reasons are many‐folded. Not only the increasing utilization of the mobile communications networks for ever‐advancing applications including higher‐definition video, virtual reality, and artificial intelligence require much more capacity even in remote areas, but – and one might argue if even primarily – the need is derived from the exponential increase of the IoT devices. 
+The number of the intelligent sensors and other machines communicating with each other, service back‐ends require support for much more simultaneously connected devices. The amount may be, as stated in one of the core requirements of the ITU, one million devices per km2, which outnumbers clearly even the theoretically achievable capacity the advanced 4G can offer. "
+
+
+1.9 5G Standardization and Regulation
+
+1.9.1 ITU
+."The ITU‐R is the highest‐level authority for defining the universal principles of 5G. The ITU is thus planning to produce a set of requirements for the official 5G‐capable systems under the term IMT‐2020.(...)"
+."The IMT‐2020 is in practice a program to describe the 5G as a next‐evolution step after the IMT‐2000 and IMT‐Advanced"
+."The aim of the ITU‐R is to finalize the vision of 5G mobile broadband society which, in turn, is an instrumental base for the ITU's frequency allocation discussions"
+
+1.9.2 3GPP
+."(...) one of the active standardization bodies driving the practical 5G solutions is the 3GPP, which is committed to submitting a candidate technology to the IMT‐2020 process. "
+."To align the technical specification work accordingly, the 3GPP has decided to submit the final 5G candidate proposal based on the further evolved LTE‐Advanced specifications, as will be their status by December 2019. In addition to the 3GPP, there may also be other candidate technologies seen, such as an enhanced variant of IEEE 802.11."
+
+."As for the 3GPP specifications, 5G will affect several technology areas of radio and core networks. The expected aim is to increase the theoretical 4G data rates perhaps 10–50 times higher whilst the response time of the data would be reduced drastically, close to zero."
+." The 3GPP RAN TSG (Radio Access Network Technical Specification Group) is the responsible entity committed to identify more specifically these requirements, scope, and 3GPP requirements for the new radio interface. "
+."(...)At the same time, the evolved core network technologies need to be revised by the system architecture teams so that they can support the increased data rates accordingly."
+
+IMPORTANT - 5G security aspects with impact on SIM, UICC
+As for the development of the security aspects, 3GPP SA3 has produced the 5G security specification TS 33.501, V15.2.0. Some of the most important topics relevant to UICC follow:
+
+    Tamper‐resistant hardware is mandatory for key storage, key derivation, and running the authentication algorithm. Please note that it is not explicitly stated that this applies for both 3GPP and non‐3GPP networks and for both primary and secondary authentication.
+    Both Extensible Authentication Protocol (EAP) Authentication and Key Agreement (AKA') and 5G AKA are mandatory to be supported for accessing 5G network using a primary authentication.
+    4G and 5G AKA are similar with enhancement on the Authentication Confirmation message.
+    EAP AKA' will also be used to access non‐3GPP networks.
+    256‐bit algorithms are required in 5G.
+    New 5G user identifiers are SUPI (Subscription Permanent Identifier), SUCI (Subscription Concealed Identifier) and 5G‐GUTI (5G Globally Unique Temporary Identity).
+
+
+IMPORTANT - RADIO INTERFACE 5G vs 4G 
+As for the radio interface, the most remarkable news of 2017 was the decision to include the 3GPP's 5G Next Radio (NR) work item for the non‐standalone mode, i.e. for the scenarios with 5G radio base station relying on 4G Evolved Packet Core (EPC). At the same time, there was agreement on:
+
+    Stage 3 for non‐standalone 5G‐NR evolved Multimedia Broadband (eMBB) includes low‐latency support.
+    4G LTE EPC network will be reused.
+    The control plane on EPC‐eNB‐user equipment (UE) will be reused.
+    An additional next‐generation user plane is adapted on NR gNB–UE.
+
+
+1.10 Global Standardization in 5G Era 
+//key standardization bodies and industry forums, seen in IoT context here
+
+1.10.1 GlobalPlatform
+."GlobalPlatform is a standardization body with interest areas covering, e.g. UICC and embedded UICC (eUICC), Secure Element (SE), Secure Device, trusted service manager (TSM), certification authority (CA), and TEE. The key standards of the GlobalPlatform related to the IoT include the embedded UICC protection profile, and the body has established an IoT task force. "
+
+1.10.2 ITU
+// see above for 5G stuff
+."As for the development of IoT, the ITU has an IoT Global Standards Initiative (IoT‐GSI) established in 2015, as well as a study group 20 on IoT, applications, smart cities, and communities. The aim of the ITU is to ensure a unified approach in ITU‐T for development of standards enabling the IoT on a global scale. The key IoT‐related standard is the Rec. ITU‐T Y.2060 (06/2012)." // ITU-T SG-20
+
+1.10.3 IETF
+."The Internet Engineering Task Force (IETF) develops the Internet architecture."
+."The IoT directory of IETF is found in [19]."
+
+1.10.4 3GPP/3GPP2
+."3GPP and its US counterparty 3GPP2 focus on cellular connectivity specifications that have been actively widened to cover also low‐power wide area network (LPWAN) area"
+."These include most concretely LTE‐M and category 0 for low‐bit rate M2M, and the further enhanced terminal categories that are optimized for IoT such as Cat‐M1 and NB‐IoT."
+
+1.10.5 ETSI
+."The European Telecommunications Standards Institute (ETSI) executes security standardization of, e.g. UICC and its evolution under the term SSP (smart secure platform). "
+."The latter is a continuum that opens room for new forms of UICCs such as embedded and integrated UICCs. The ETSI Technical Committee (TC) M2M is a relevant group for IoT development at ETSI. "
+
+
+1.10.6 IEEE
+The Institute of Electrical and Electronics Engineers (IEEE) 802 series includes aspects for IoT connectivity. 
+(...)  The IEEE 802.11 has many variants from which e.g. 802.11p is designed specifically for vehicle‐to‐vehicle (V2V) communications. That can be considered as a competing technology for the 3GPP‐based modes that will be optimized for vehicle communications (...)
+The IEEE Project P.2413 revises IEEE standards for better use within the IoT. The goal of the project is to build reference architecture covering the definition of basic architecture building blocks and integration into multitiered systems.(...) 
+
+1.10.7 SIMalliance
+The task of SIMalliance is to simplify SE implementation, and it drives deployment and management of secure mobile services. It also promotes SE for secure mobile applications and services and promotes subscription management standardization, which is beneficial (...) for the remote management of embedded universal integrated circuit card (eUICC) and integrated universal integrated circuit card (iUICC), which can be expected to be elemental components of 5G ecosystem 
+
+1.10.8 Smart Card Alliance
+Smart Card Alliance (SCA) has been a centralized industry interface for smart card technology, and it has followed the impact and value of smart cards in the United States and Latin America. As the 5G IoT can be based largely on the basic concept of the SIM card, and thus smart card technology, this task continues being relevant in the 5G era as well. 
+
+1.10.9 GSMA
+The GSM Association (GSMA) represents interests of MNOs worldwide. It is involved in the Network 2020 paving the way for 5G. GSMA is involved in the standardization of subscription management and embedded Subscriber Identity Module (eSIM), and their development for M2M and consumer environment. It should be noted that the previous term of GSMA for indicating remote Subscriber Identity Module provisioning (RSP) is now generalized via the term eSIM, which has been approved by the GSMA as a global product label that can be used to indicate that a device is “RSP enabled”
+
+1.10.10 NIST
+The US National Institute of Standards Technology (NIST) develops cybersecurity frameworks to address critical infrastructure including IoT/M2M space. The focus is on security and privacy for the evolution of IoT and M2M. It produces Federal Information Processing Standards Publications (FIPS PUBS)
+
+1.10.11 NHTSA
+The National Highway Transportation and Safety Administration (NHTSA) improves safety and mobility on US roadways. It also investigates connected vehicle technology and communications of safety and mobility information to one another. It has International Technical Working Group on IoT‐Enabled Smart City Framework
+
+1.10.12 ISO/IEC
+The International Organization for Standardization (ISO)/International Electrotechnical Commission (IEC) is an elemental body for smart card technology standardization. ISO/IEC 7816 and 14400 are SIM/UICC standards for contact‐oriented and contactless integrated circuit cards (ICCs)
+(..)IoT devices can be expected to be based largely on UICC. 
+
+1.10.14 OMA
+Open Mobile Alliance (OMA) has developed device management (DM). OMA LightweightM2M aims to optimize the secure communications between all, especially economic, devices. OMA DM is a subgroup under the OMA alliance. OMA DM is an initiative for automotive environment, and it includes over the air (OTA) updates for future investigations. 
+
+1.10.15 CEPT/ECC
+
+Conférence Européenne des Postes et des Télécommunications (CEPT) and Electronic Communications Committee (ECC) are coordinated by European Communications Office (ECO). They produce requirements for approval for certification bodies and testing labs. They work in the ECC on smart grids, smart metering, and others under the ultra‐high frequency (UHF) roadmap. Related to IoT environment, there is an ECC Report 153 on Numbering and Addressing in M2M Communications.
+M2M can be used in several licensed and unlicensed frequency bands. The aim of ECC is to understand better the spectrum as well as numbering and addressing harmonization needs of existing and future M2M applications since related initiatives are present in various for a within the ECC, aligning with industry
+
+1.10.17 OWASP
+
+Open Web Application Security Project (OWASP) is a worldwide not‐for‐profit charitable organization focused on improving the security of software. OWASP IoT Project provides information on IoT attack surface areas and IoT testing guides and maintains a top‐10 IoT vulnerabilities list [37].
+
+1.10.18 OneM2M
+OneM2M's architecture and standards for M2M communications are designed to be applied in many different industries and take account of input and requirements from any sector. It works on eHealth and Telemedicine, Industrial, and Home Automation
+
+1.10.19 Global Standards Collaboration
+
+Global Standards Collaboration (GSC) is an unincorporated voluntary organization dedicated to enhancing global cooperation and collaboration regarding communications standards and the related standards development environment. (...)The members of GSC include ARIB (Association of Radio Industries and Businesses in Japan), ATIS (Alliance for Telecommunications Industry Solutions in the United States), CCSA (China Communications Standards Association), ETSI, IEC, IEEE‐SA (IEEE Standards Association), ISO, ITU, TIA (Telecommunications Industry Association in the United States), TSDSI (Telecommunications Standards Development Society in India), TTA (Telecommunications Technology Association in Korea), and TTC (Telecommunication Technology Committee in Japan)
+
+1.10.20 CSA
+
+Cloud Security Alliance (CSA) is a nonprofit organization to promote the use of practices for providing security assurance within cloud computing (...)
+
+1.10.21 NGMN
+
+Next Generation Mobile Networks (NGMN) is relevant for overall advanced network technologies as well as for the IoT [41]. As an example, NGMN has launched a projects “Spectrum and deployment efficiencies,” “URLLC requirements for vertical industries,” “RAN convergence,” and “Extreme long‐range communications for deep rural coverage.” (...)
+
+1.10.22 Car‐to‐Car Communication Consortium
+
+Car‐to‐Car Communication Consortium (C2C‐CC) is industry forum for the V2V technology development. It is a nonprofit, industry driven organization initiated by European vehicle manufacturers and supported by equipment suppliers, research organizations, and other partners. The C2C‐CC is dedicated to the objective of further increasing road traffic safety and efficiency by means of cooperative intelligent transport systems (C‐ITS) with V2V communication supported by vehicle‐to‐infrastructure communication (V2I)
+
+1.10.23 5GAA
+
+The mission of the 5G Automotive Association (5GAA) is to develop, test, and promote communications solutions, initiate their standardization, and accelerate their commercial availability and global market penetration to address society's connected mobility and road safety needs with applications such as autonomous driving, ubiquitous access to services, and integration into smart city and intelligent transportation
+
+1.10.24 Trusted Computing Group
+Through open standards and specifications, Trusted Computing Group (TCG) enables secure computing. Some benefits of TCG technologies include protection of business‐critical data and systems, secure authentication and protection of user identities, and the establishment of machine identity and network integrity. The work groups are cloud; embedded systems; infrastructure; IoT; mobile; PC client; regional forums; server; software stack; storage; trusted network communications; trusted platform module (TPM); and virtualized platform
+
+(...)
+
+----------------------------------------
+CH2 Requirements
+
+2.1 Overview
+."It should be noted that this book assumes ITU (International Telecommunications Union) to be the highest authority dictating the minimum 5G requirements. This book thus walks the reader through the explanation of the latest ITU statements for their 5G candidate selection. Furthermore, this chapter summarizes the statements the other relevant standardization body has presented, the Third Generation Partnership Project (3GPP) being one of the most active stakeholders in the standardization of the 5G."
+
+	=> ITU selects the candidate, 3GPP is one of the most relevant orgs to present a candiate 5G tech
+
+."The 3GPP has sent the first draft technical specifications as defined in the Release 15 for the preliminary ITU‐R review, and the final submission will be based on the frozen technical standard set by Release 16."
+
+."Other candidate technologies might also be presented to the ITU evaluation, according to the ITU time schedule, although as an example, the Institute of Electrical and Electronics Engineers (IEEE) has not planned to send a complete 5G system proposal to the ITU evaluation; instead, there will be many IEEE sub‐solutions that are relevant in building up 5G networks."
+
+
+2.2 Background
+
+."ITU has taken the role of defining the mobile communications generations. This was the situation for the third generation (3G) and fourth generation (4G)(...). 
+ITU defines 3G as a set of radio access and core technologies forming systems capable of complying with the IMT‐2000 (3G) and International Mobile Telecommunications Advanced (IMT‐Advanced) (4G) requirements. 
+Based on the number of end users, Universal Mobile Telecommunications System (UMTS) and its evolution up to advanced HSPA (high‐speed packet access) is the most popular 3G system while Long‐Term Evolution (LTE)‐Advanced, as of 3GPP Release 10, is the most utilized 4G technology."
+
+."(...)Next Generation Mobile Network (NGMN) Alliance represents the interests of mobile operators, device vendors, manufacturers, and research institutes.
+One of the main aims of the forum is to pave the way for the commercial launch of new mobile broadband networks. Some practical methods to do this are the production of commonly agreed technology roadmap as well as user trials"
+
+." ITU is still acting as a highest authority to define the global and interoperable 5G requirements for the mobile communications systems in such a way that the requirements are agreed by all the stakeholders. This is to avoid different interpretations by the industry when deploying and marketing the networks."
+
+."the practical standardization work results in the ITU‐5G‐compliant technical specifications created by mobile communications industry. "
+
+."One of the most active standardization bodies for the mobile communications technologies is 3GPP, which has created standards for Global System for Mobile communications (GSM), UMTS/HSPA, and LTE/LTE‐Advanced."
+
+
+2.3 5G Requirements Based on ITU
+2.3.1 Process
+
+."The ITU Recommendation ITU‐R M.2083 describes the IMT‐2020 overall aspects." // GET THIS
+."In short, the ITU foresees the 5G to function as an enabler for a seamlessly connected society in the 2020 time frame and beyond. The high‐level idea of the 5G is to bring together people via a set of “things,” data, applications, transport systems, and cities in a smart networked communications environment. "
+
+."The ITU Working Party 5D (WP5D) has been working on the ITU's expected time frame paving the way for the IMT‐2020, including the investigation of the key elements of 5G in cooperation with the mobile broadband industry and other stakeholders interested in the 5G. 
+One of the elemental parts of this development has been the 5G vision of the ITU‐R for the mobile broadband connected society, which was agreed in 2015." // this is in itu-r m.2083
+
+
+2.3.2 Documents
+The key sources of information for the ITU 5G development can be found in ITU‐R M.2083 [6], which collects the documents for forming the 5G:
+.M.2083‐0 (09/2015). IMT vision. “Framework and overall objectives of the future development of IMT for 2020 and beyond.” 
+
+.Report ITU‐R M.2320. Future technology trends of terrestrial IMT systems // GET THIS
+.Report ITU‐R M.2376. Technical feasibility of IMT in bands above 6 GHz
+.Recommendation ITU‐R M.1645. Framework and overall objectives of the future development of IMT‐2000 and systems beyond IMT‐2000. // GET THIS
+.Recommendation ITU‐R M.2012. Detailed specifications of the terrestrial radio interfaces of IMT‐Advanced.
+.Report ITU‐R M.2370. IMT Traffic estimates for the years 2020–2030. // GET THIS
+.Report ITU‐R M.2134. Requirements related to technical performance for IMT‐Advanced radio interface(s). // GET THIS
+
+."The Recommendation ITU‐R M.2083 contains eight key capabilities for IMT‐2020, and functions as a basis for the technical performance requirements of 5G."
+
+
+2.3.3 Peak Data Rate
+."The peak data rate (b/s) refers to the maximum possible data rate assuming ideal, error‐free radio conditions that are assigned to a single mobile station with all the available radio resources, excluding the resources for physical layer synchronization, reference signals, pilots, guard bands, and guard times"
+."The term W representing bandwidth, Esp referring to a peak spectral efficiency, the user's peak data rate Rp = WEsp (...)
+This requirement is meant to evaluate the evolved Multimedia Broadband (eMBB) use case, for which the minimum downlink peak data rate is 20 Gb/s whereas the value for uplink is 10 Gb/s."
+
+
+2.3.4 Peak Spectral Efficiency
+The peak spectral efficiency (b/s/Hz) normalizes the peak data rate of a single mobile station under the same ideal conditions over the utilized channel bandwidth. The peak spectral efficiency for the downlink is set to 30 b/s/Hz, whereas the value for the uplink is 15 b/s/Hz.	
+
+
+2.3.5 User Experienced Data Rate
+The user experienced (UX) data rate is obtained from the 5% point of the CDF (cumulative distribution function) of the overall user throughput(...)
+ If the data transfer takes place over multiple frequency bands, each component bandwidth is summed up over the relevant bands, and the UX data rate Ruser = WEs‐user. This equation refers to the channel bandwidth multiplied by the fifth percentile user spectral efficiency. 
+The ITU requirements for the UX data rate in downlink is 100 Mb/s, whereas it is 50 Mb/s for uplink.
+
+
+2.3.6 Fifth Percentile User Spectral Efficiency
+The fifth percentile user spectral efficiency refers to the 5% point of the CDF of the normalized user data throughput. The normalized user throughput (b/s/Hz) is the ratio of correctly received SDUs in layer 3 during selected time divided by the channel bandwidth. This requirement is applicable to eMBB use case, and the requirement values are, for downlink and uplink, respectively, the following:
+
+    Indoor hotspot. 0.3 b/s/Hz (DL) and 0.21 b/s/Hz (UL).
+    Dense urban. 0.225 b/s/Hz (DL) and 0.15 b/s/Hz (UL), applicable to the Macro TRxP (Transmission Reception Point) layer of Dense Urban eMBB test environment.
+    Rural. 0.12 b/s/Hz (DL) and 0.045 b/s/Hz (UL), excluding the LMLC (low mobility large cell) scenario.
+
+
+2.3.7 Average Spectral Efficiency
+Average spectral efficiency can also be called spectrum efficiency, as has been stated in ITU Recommendation ITU‐R M.2083. It refers to the aggregated throughput, taking into account the data streams of all the users. More specifically, the spectrum efficiency is calculated via the correctly received SDU bits on layer 3 during a measurement time window compared to the channel bandwidth of a specific frequency band divided further by the number of TRxPs, resulting in the value that is expressed in b/s/Hz/TRxP. The ITU requirement values are, for downlink and uplink for eMBB use case, respectively, the following:
+
+    Indoor hotspot. 9 b/s/Hz/TRxP (DL) and 6.75 b/s/Hz/TRxP (UL).
+    Dense urban for macro TRxP layer. 7.8 b/s/Hz/TRxP (DL) and 5.4 b/s/Hz/TRxP (UL).
+    Rural (including LMLC). 3.3 (DL) and 1.6 (UL).
+
+
+2.3.8 Area Traffic Capacity
+The area traffic capacity refers to the total traffic throughput within a certain geographic area, and is expressed in Mb/s/m2. More specifically, the throughput refers to the correctly received bits in layer 3 SDUs during a selected time window. If the bandwidth is aggregated over more than one frequency band, the area traffic capacity is a sum of individual bands. The target value for the area traffic capacity is set to 10 Mb/s/m2.
+
+
+2.3.9 Latency
+The user plane latency refers to the time it takes for the source sending a packet in radio protocol layer 2/3 to reach its destination on the respective layer. The latency is expressed in milliseconds. The requirement for the user plane latency is 4 ms for eMBB use case, whilst it is 1 ms for ultra‐reliable low latency communications (URLLCs). The assumption here is an unloaded condition in both downlink and uplink without other users than the observed one whilst the packet size is small (zero payload and only internet protocol [IP] header).
+
+The control plane latency, in turn, refers to the transition time it takes to change from the idle stage to the active stage in URLLC use case. The requirement for the control plane latency is maximum of 20 ms, and preferably 10 ms or less.
+
+
+2.3.10 Connection Density
+Connection density refers to the total number of 5G devices that can still comply with the target QoS (quality of service) level within a geographical area which is set to 1 km2, with a limited frequency bandwidth and the number of the TRxPs, the variables being the message size, time and probability for successful reception of the messages. This requirement applies to the massive machine‐type communications (mMTCs) use case, and the minimum requirement for the connection density is set to 1 000 000 devices per km2.
+
+
+
+/////////////////////////////////////CONTINUE ANKI HERE
+
+
+
+2.3.11 Energy Efficiency
+
+The high‐level definition of the 5G energy efficiency indicates the capability of the radio interface technology (RIT) and set of RITs (SRIT) to minimize the radio access network (RAN) energy consumption for the provided area traffic capacity. (...)Energy efficiency is relevant for the eMBB use case, and the RIT and SRIT must have the capability to support a high sleep ratio and long sleep duration.
+
+
+2.3.12 Reliability
+The reliability of 5G in general refers to the ability of the system to deliver the desired amount of packet data on layers 2 and 3 within expected time window with high success probability, which is dictated by a channel quality. This requirement is applicable to the URLLC use cases.
+
+More specifically, the reliability requirement in 5G has been set to comply with the successful reception of a 32‐bit packet data unit (PDU) on layer 2 within 1 ms period with a 1 × 10−5 success probability. This requirement is applicable to the edge of the cell in urban macro‐URLLC, assuming 20 bytes of application data and relevant protocol overhead.
+
+
+2.3.13 Mobility
+The 5G mobility requirement refers to the maximum mobile station speed in such a way that the minimum QoS requirement is still fulfilled. There is a total of four mobility classes defined in 5G: (i) stationary with 0 km/h speed; (ii) pedestrian with 0–10 km/h; (iii) Vehicular with 10–120 km/h; (iv) high‐speed vehicular with speeds of 120–500 km/h. The applicable test environments for the mobility requirement are indoor hotspot eMBB (stationary, pedestrian), dense urban eMBB (stationary, pedestrian, and vehicular 0–30 km/h), and rural eMBB (pedestrian, vehicular, high‐speed vehicular).
+
+
+2.3.14 Mobility Interruption Time
+The mobility interruption time refers to the duration of the interruption in the reception between the user equipment (UE) and base station, including RAN procedure execution, radio resource control (RRC) signaling or any other messaging. This requirement is valid for eMBB and URLLC use cases and is set to 0 ms.
+
+
+2.3.15 Bandwidth
+The bandwidth in 5G refers to the maximum aggregated system bandwidth and can consist of one or more radio frequency (RF) carriers. The minimum supported bandwidth requirement is set to 100 MHz, and the RIT/SRIT shall support bandwidths up to 1 GHz for high‐frequency bands such as 6 GHz. Furthermore, the ray tracing (RT)/SRIT shall support scalable bandwidth (Figure 2.3).
+
+// SEE DIAGRAM OF REQUIREMENTS IN PPT
+
+
+2.4 The technical specification of 3GPP
+
+2.4.1 Releases
+There are two paths within the Release 15 of the 3GPP, one defining the ITU‐R –compliant 5G whilst the other route continues developing the LTE under further stage of the LTE‐Advanced Pro
+(..) the development of the 5G radio interface divides NR into two phases. The first phase is an intermediate step relying on the 4G infrastructure, referred to as non‐standalone scenario, while the final, native, and fully 5G‐based core and radio system is referred to as standalone.
+(...)the 3GPP has studied plenty of items to comply with the high‐level 5G requirements of the ITU‐R. The items are related to the enhancement of the LTE, as well as the completely new topics related to 5G
+
+    Uplink data compression (UDC). This is a feature that would be implemented between evolved NodeB (eNB) and UE. The benefit of the UDC is the compression gain especially for web browsing and text uploading, and the benefits cover also the online video performance and instant messaging. The result is thus the capacity enhancement and better latency in the uplink direction especially in the challenging radio conditions [12].
+    Enhanced LTE bandwidth flexibility. This item aims to further optimize the spectral efficiency within the bandwidths of 1.4–20 MHz.
+    Enhanced Voice over Long‐Term Evolution (VoLTE) performance. This item refers to the maintenance of the voice call quality sufficiently high to delay the Single Radio Voice Call Continuity (SRVCC), thus optimizing the signaling and network resource utilization.
+    Virtual reality. This item refers to the innovation of potential use cases and their respective technical requirements on virtual reality.
+    NR‐based access to unlicensed spectrum. This item is related to the advanced phase of the Release 15 by investigating further the feasibility of license assisted access (LAA) both below and above 6 GHz frequency band, such as 5, 37, and 60 GHz.
+    NR support on nonterrestrial networks. This item refers to the channel models and system parameters respective to the nonterrestrial networks, to support satellite systems as one part of the 5G ecosystem.
+    Enablers for network automation for 5G. This item relates to the automatic slicing network analysis, based on network data analytics (NWDA).
+    System and functional aspects of energy efficiency in 5G networks. This item refers to the overall topic of energy efficiency (EE). The subtopics include EE key performance indicators (KPIs) relevant to the 5G system, including the ones identified by European Telecommunications Standards Institute (ETSI) TC EE, ITU‐T (Telecommunication Standardization Sector of ITU) SG5, and ETSI Network Functions Virtualization (NFV) ISG (Industry Spec	ification Group), as well as the feasibility of the operation and maintenance to support the 5G EE and innovation in general for better optimizing the energy optimization.
+
+2.4.2 Security Requirements for 5G
+
+The 3GPP has defined a set of security requirements for 5G in technical specification TS 33.501. Figure 2.4 summarizes the key elements and functionalities, and the following sections detail the respective key requirements.
+// SEE DIAGRAM IN PPT
+
+2.4.2.1 Overall Security Requirements
+The generic security requirements of the 3GPP TS 33.501 cover the following cases:
+
+    UE must include protection against bidding‐down attack.
+		The bidding‐down attack refers to the intentions to modify the functionality of the UE and/or network to make it believe that the networks and/or UE would not support security features. This may lead to security breaches by forcing reduction of the security measures between the UE and network.
+
+    Network must support the subscription authentication and key agreement (AKA).
+		The subscription AKA is based on a 5G‐specific identifier SUPI (Subscription Permanent Identifier). There is also a protected network identifier for the mutual authentication procedure so that the UE can reliably authenticate the network. The serving network authentication refers to the procedure where the UE authenticates the serving network identifier based on successful key use as a result of the AKA.
+(...)
+
+Each mobile equipment (ME) must support unauthenticated emergency services, which refers to the possibility to make an emergency call even without the subscription credentials of the Universal Integrated Circuit Card (UICC). In other words, the ME must be able to execute emergency calls without the Universal Subscriber Identity Module (USIM).
+
+2.4.2.2 UE
+As dictated by the 3GPP TS 33.501 [13], the 5G UE must comply with the requirements summarized in Table 2.1.
+
+// SEE TABLE PPT FOR ANKI
+
+.the main requirements groups for 5G UE from 3GPP 33.501
+	.Ciphering and integrity protection
+	.User data and signaling
+	.User data and signaling integrity
+	.Secure storage and processing of subscription credentials
+	.Subscriber privacy
+
+2.4.2.3 gNB
+As dictated by the 3GPP TS 33.501 [13], the 5G based station, i.e. fifth‐generation NodeB (gNB), must comply with the requirements summarized in Table 2.2.
+
+// SEE TABLE PPT FOR ANKI
+
+.the main requirements groups for 5G gNB from 3GPP 33.501
+	.User data and signaling data confidentiality
+	.User data and signaling data confidentiality
+	.gNB setup and configuration
+	.gNB key management
+	.Secure environment of the gNB
+	.gNB F1 interfaces
+	.gNB E1 interfaces
+
+/////////////////// CONTINUE HERE, ALSO  WITH ANKI
+
+4
+Architecture
+
+4.1 Overview
+(...)
+The 5G network architecture can be characterized as a service based. It refers to the ability of the network, wherever suitable, to present the architecture elements as network functions (NFs) offering their specialized services via interfaces of a common framework to any network functions that are permitted to make use of these provided services
+
+5G provides the possibility for mobile network operators (MNOs) to deploy network slicing (NS). In the 5G context, NS refers to a set of 3GPP‐defined features and functionalities forming a complete Public Land Mobile Network (PLMN), which provides services to a set of user equipment (UE). Network slicing provides the means to utilize in a controlled way the needed set of PLMN functionalities and services so that the resources of the network can be optimized per use case.
+
+Another benefit of the 5G system (5GS) is the generalized design of the functionalities and a forward‐compatible interface between the access network (AN) and core network, which allows the common 5G core network (5GC) to operate with different AN. In the first phase of 5G, as defined in the 3GPP Release 15, the interworking networks that are possible to be utilized together with the 5G are the Next Generation Radio Access Network (NG‐RAN) as defined by 3GPP, and the 3GPP‐defined untrusted Wireless Local Area Network (WLAN) access. As has been the case previously, also 5G will have its evolution path, and the Release 16 will bring along more functionalities as the work progresses.
+
+(...)
+The 5G system as defined by the 3GPP is a major enhancement for the previous mobile communication generations. Along with the considerably better performance, the complete philosophy of the network architecture gets a major facelift. The most remarkable difference between the old world and the NR and core networks is the virtualization of the functionality, which provides much wider set of use cases. Furthermore, the new architecture model provides a fluent modernization of the network and utilization of the cloud principles for processing and storing data.
+
+
+4.2 Architecture
+
+This section presents the default 5G architecture with new and reutilized elements, connected and cooperative networks, aggregated services, and key functions of evolved networks.
+4.2.1 Architecture of the Previous 3GPP Generations
+
+To understand the new aspects of the 5G system, let's have a brief look on the previous generations. Figure 4.1 summarizes the key elements that have been present in the mobile networks since the deployment and evolution of 2G, 3G, and 4G. Along with the 5G, both radio and core networks will be renewed with new elements and interfaces present. Figure 4.2 further summarizes the familiar interfaces within the 2G, 3G, and 4G networks.
+
+
+4.2.2 Architecture Options for 5G
+
+At present, there are various options for adding 5G network to the infrastructure depicted in Figure 4.2. 3GPP has considered the final architecture and the respective evolution plan leading into the NR and core architecture, and the concrete base for the options is presented in [1]. The summary of these options is presented below.
+
+The development path of 5G radio access network (RAN) as well as core network requires a phased approach. There will be two parallel versions of the radio technologies:
+
+    LTE as defined in 3GPP Release 15, referred to as evolved LTE (eLTE), as discussed in 3GPP System Architecture group SA2.
+    Native fifth generation's New Radio (NR).
+
+Furthermore, there will be two core network variants during the initial phase of 5G system (which is also referred to as 5GS):
+
+    Evolved Packet Core (EPC) as defined in 4G System Architecture Evolution (SAE) technical specifications of 3GPP.
+    Next Generation Core Network (NGCN).
+
+The deployment strategies of these variants lead into 12 scenarios, as summarized in [1].
+
+The scenarios representing the standalone LTE/EPC and standalone NR/NGCN architectures are depicted in Figure 4.3.
+
+// figure 4.3
+
+Figure 4.3 The high‐level principle for the architecture of the LTE/EPC and 5G new radio (NR)/next‐generation core network (NGCN). The 5G system provides possibility to virtualize the network functions (NF), which is presented in conceptual level in this format. When 5G is set to interwork via 4G EPC, the S‐GW and P‐GW are further subdivided into separate functional elements, each taking care of user and control planes.
+
+As an additional solution in the interim phase of 4G EPC support for the initial 5G deployments, the Serving Gateway (S‐GW) and Proxy Gateway (P‐GW) functions have been broken into two parts: user plane (UP) and control plane (CP).
+
+Figure 4.3 depicts some of the most important new 5G‐specific elements:
+
+    AMF refers to the Access and Mobility Management Function.
+    UPF refers to the User Plane Function.
+    SMF refers to the Session Management Function.
+    NF refers to a network function. 5G network has a number of these network functions for specialized tasks, in a virtualized environment.
+
+The philosophy of the 5G is remarkably different from the previous generations due to the virtualization of the network functions. This results to new, more optimized ways of utilizing the resources in a dynamic manner upon the need, via network slices. Network slice refers to a logical network that provides specific network capabilities and network characteristics. The MNO can have a number of these network slices that can be configured each optimizing them to certain use cases and environments such as broadband communications, critical communications and massive Internet of Things (mIoT) communications. Equally, the essential parameters of each slice can be adjusted separately, including the level of security.
+
+As soon as the first 5G services are deployed, there will be only a small number of 5G‐capable terminals, and the NR coverage will be only limited. For this phase, the solution is to deploy the 5G radio coverage gradually in such a way that the NR elements are connected directly to the LTE radio elements as depicted in Figure 4.4. Another option is to provide both interfaces New Radio‐Long‐Term Evolution (NR‐LTE) and NR‐EPC for relying on the legacy core network of 4G either via the LTE radio, or by connecting the 5G NR directly to 4G EPC.
+
+// Figure 4.4
+
+Figure 4.4 The 4G EPC develops further for better supporting 5G connectivity, by dividing the S‐GW and P‐GW functions into user and control planes.
+
+The first set of technical specifications of 5G includes the concept for NSA (non‐standalone) architecture, which will be the option for dual connectivity (DC). The DC itself is not new anymore as such as it was introduced in LTE 3GPP Release 12. Where carrier aggregation (CA) makes it possible to serve different carriers by the same evolved NodeB (eNB), the DC serves the carriers by different backhauls, which refers to separate eNB elements, or combined eNB and 5G NodeB (gNB) elements.
+
+DC, as defined in [2] and depicted in Figure 4.5, refers to device that is simultaneously connected to multiple NG‐RAN nodes, thus forming multi‐Radio Access Technology Dual Connectivity (MR‐DC) with 5G Core network as defined in 3GPP TS 37.340. There are two possible scenarios for the DC:
+
+/ Figure 4.5
+
+Figure 4.5 5G multi‐DAT dual connectivity.
+4.2.3 Gradual Deployment of 5G
+
+For the fluent introduction of the 5G services, 3GPP has designed a phased approach for the deployment of the 5G. It means that the 5G operators may select the optimal network strategy along with the route toward full 5G services as they develop basing on practical equipment availability and further development of the 5G technical specifications as of Release 15 (referred to as the first phase of 5G), and Release 16 (second phase of 5G).
+
+Figure 4.6 presents the 5G standalone scenario, which are called option 1 and 2 for 4G and 5G systems, respectively. Figure 4.6 also depicts the intermediate options paving the way for the fully native 5G standalone option 2:
+
+    Option 3. The non‐standalone scenario for the initial phase of the 5G deployments. The 5G terminal relies on both LTE and NR radio networks and solely on 4G core.
+    Option 4. The evolution path of the 5G can lead into the intermediate step of non‐standalone, NR‐assisted architecture that relies on the 5G core.
+    Option 5. As soon as there is Release 15 LTE available, it can serve the further evolved LTE‐Pro terminals while the very first NR serves the 5G‐capable terminals separately. This option has been deprioritized.
+    Option 6. The 5G terminal can be connected via booth 4G and 5G radio networks, while the 5G core takes care of the connectivity. This option provides the customers with the widest options to fully exploit the capabilities of the 5G, still providing the legacy connectivity via 4G. In this scenario, the 4G would take care of the major part of signaling while 5G radio delivers the data. This option can be compared, thus, with the principle of the carrier aggregation. This option has been deprioritized.
+    Option 7. The 4G core can also take care of the 4G and 5G terminals in intermediate stage.
+
+// FIgure 4.6
+
+Figure 4.6 The most concrete 5G deployment options summarized.
+
+From these options, the ones summarized in Figure 4.6 have been selected as priority deployment variants.
+
+To complete the first phase of 5G as defined in the 3GPP Release 15, the RAN 79 plenary meeting of 3GPP decided the phased approach in the following way:
+
+    The options for 5G deployment scenarios are divided into three parts in the Release 15.
+    The so‐called late drop of the 5G NR was added into the Release 15 specifications on December 2018, about six months after the formal publication of the Release 15. This late drop refers to the architectural options of the NR that are not completed by September ASN.1 drop. Options 4 and 7 are part of this late drop.
+
+The details of the selected options are defined in 3GPP TS 38.300 (Stage 2 radio architecture). The ng‐eNB refers here to a node providing Evolved Universal Terrestrial Radio Access (E‐UTRA) user plane (UP) and control plane protocol terminations toward the UE and connected via the NG interface to the 5GC. gNB, in turn, is a node providing NR user plane and control plane protocol terminations toward the UE and connected via the NG interface to the 5GC.
+
+
+4.2.4 5G User and Control Plane
+
+The 3GPP TS 38.401 defines the NR architecture and respective interfaces. One of the main differences in the 5G architecture compared to the previous ones is the logical separation of signaling and data transport networks. In fact, in addition to the cases within 5G infrastructure itself, this separation of the signaling and user data connections can be extended to cover the 5G and other access networks of previous generations so that the user data could go through 5G radio network, and the signaling load could be diverted via the 4G radio. This functionality can be understood as an extension to the carrier aggregation.
+
+Another key aspect in 5G is that the 5G RAN and 5G core network functions are completely separated from transport functions. Thus, as an example, the addressing scheme of the 5G RANs and 5G core networks are not tied to the addressing schemes of transport functions. This means that the NG‐RAN completely controls the mobility for an Radio Resource Control (RRC) connection.
+
+For the NG‐RAN interfaces, the specifications provide a fluent functional division across the interfaces as their options can be minimized. Furthermore, the interfaces are based on a logical model of the entity controlled through this interface, and one physical network element can implement multiple logical nodes.
+
+This division of the user data and signaling traffic also means that the Uu and NG interfaces include both user plane and control plane protocols. The user plane protocols implement the packet data unit (PDU) session service carrying user data via the access stratum (AS) while the control plane protocols control the PDU sessions and the connection between the UE and the network, such as service requests, transmission resource control, and handover [3].
+
+The 5G user plane is designed for transferring data via the PDU session resource service from one service access point (SAS) to another [3]. The high‐level involvement of the 5G protocols is depicted in Figure 4.7. The respective RAN and core network protocols provide the PDU session resource service. The 5G radio protocols are defined in 3GPP TS 38.2xx and 38.3xx series, whereas the 5G core protocols are found in TS 38.41x series.
+
+//Figure 4.7
+
+Figure 4.8 shows the high‐level idea of the control plane, i.e. the principle of the division of the signaling protocol stacks of the 5G radio and core networks. For the control plane, the protocols are defined in the same technical specification series 38.2xx, 38.3xx, and 38.41x as for the user plane. The radio and the NG protocols contain a mechanism to transparently transfer non‐access stratum (NAS) messages. Please note that the control plane protocols shown in Figure 4.8 are presented as examples. CM refers to connection management and SM to session management.
+
+// Figure 4.8
+
+
+4.2.5 NG‐RAN Interfaces
+
+The 5G network architecture can be depicted by using reference point representation or service‐based interface representation. Figure 4.9 depicts the overall architecture and interfaces of the 3GPP 5G network in the traditional reference point format. As can be seen in the figure, the new terminology for the 5G core network is 5GC, whereas the NR system is referred to as NG‐RAN.
+
+//Figure 4.9
+The logical interfaces of the 5G architecture are referred to as NG, Xn, and F1. The complete description of these interfaces can be found in the following specifications:
+
+    3GPP TS 38.410 defines the general aspects and principles of the NG interface.
+    3GPP TS 38.420 defines the general aspects and principles of the Xn interface.
+    3GPP TS 38.470 defines the general aspects and principles of the F1 interface.
+
+The 5GC includes still the same type of network elements as is defined in the EPC of the LTE prior to the Release 15, i.e. Mobility Management Entity (MME) for signaling, S‐GW, P‐GW, and supporting elements such as for the policy rules, added by various functional 5G elements.
+
+For the radio system, the base station elements are referred to as gNB, or next‐generation NodeB. The NG interface interconnects the gNB elements of the NG‐RAN and the 5GC. The Xn network interface is used between NG‐RAN nodes.
+
+In 5G, the gNB elements can support FDD (frequency division duplex) and TDD (time division duplex) modes, as well as dual‐mode operation. The gNB elements are interconnected via the Xn‐C interface.
+
+The NG‐RAN is defined via Radio Network Layer (RNL) and Transport Network Layer (TNL). The NG‐RAN interfaces are defined as part of the RNL, whereas the TNL provides services for user plane transport and signaling transport. TNL protocol and the functionality are specified for the NG‐RAN interfaces.
+
+Each gNB may consist of a single 5G NodeB‐Centralized Unit (gNB‐CU) and a set of 5G NodeB‐Distributed Units (gNB‐DU). The connection within a gNB, between the gNB‐CU and gNB‐DU, takes place via the F1 interface − either so that a single gNB‐DU is connected to only one gNB‐CU, or depending on the implementation, a single gNB‐DU may also be connected to multiple gNB‐CU elements. The connections from outside of the gNB element form other gNB elements and from the 5GC terminate always to the gNB‐CU element.
+
+The NG‐RAN is defined via Radio Network Layer (RNL) and Transport Network Layer (TNL). The NG‐RAN interfaces are defined as part of the RNL, whereas the TNL provides services for user plane transport and signaling transport. TNL protocol and the functionality are specified for the NG‐RAN interfaces.
+
+Each gNB may consist of a single 5G NodeB‐Centralized Unit (gNB‐CU) and a set of 5G NodeB‐Distributed Units (gNB‐DU). The connection within a gNB, between the gNB‐CU and gNB‐DU, takes place via the F1 interface − either so that a single gNB‐DU is connected to only one gNB‐CU, or depending on the implementation, a single gNB‐DU may also be connected to multiple gNB‐CU elements. The connections from outside of the gNB element form other gNB elements and from the 5GC terminate always to the gNB‐CU element.
+
+Also, in case of the Evolved Universal Terrestrial Radio Access‐New Radio Dual Connectivity (EN‐DC), the S1‐U and X2‐C interfaces for a gNB that has the gNB‐CU and gNB‐DU elements terminate in the gNB‐CU element. Nevertheless, the set of gNB‐CU and one or more gNB‐DU elements per gNB are only visible to other gNBs and the 5GC as a gNB. Furthermore, each gNB is connected to all AMF elements within an AMF Region in NG‐Flex configuration. The AMF region is defined in 3GPP TS 23.501 [4]. It consists of one or more AMF sets. The AMF set, in turn, consists of some AMF elements that serve a given area and network slice. Multiple AMF sets may be defined per AMF region and network slice or slices.
+
+4.2.6 Functions of gNB and ng‐eNB
+
+The functions of the native 5G gNB and evolved 4G ng‐eNB supporting connectivity to 5G system are defined in 3GPP TS 38.300. It states that both elements host the following functions:
+
+    Internet protocol (IP) header compression, data encryption, and integrity protection
+    Selection of an AMF during the UE attachment procedure in such case when no routing to an AMF can be determined from the information provided by the UE
+    Routing of user plane data toward UPF and control plane information toward AMF
+    Connection setup and release
+    Scheduling and transmission of paging messages and system broadcast information provided by the AMF or O&M
+    Measurement and respective reporting configuration to be used for the tasks related to mobility and scheduling
+    Uplink packet marking at the uplink transport level
+    Session management
+    Functionality related to network slicing
+    QoS flow management and mapping it to data radio bearers (DRBs)
+    Support of devices in the RRC_INACTIVE state
+    Distribution function for NAS messages
+    RAN sharing
+    DC
+    Tight interworking between NR and E‐UTRA
+    Radio Resource Management (RRM)
+
+The RRM function includes radio bearer and admission control, connection mobility control, as well as scheduling, which refers to the dynamic allocation of uplink and downlink resources for devices.
+
+4.2.7 5G System Architecture
+
+The 3GPP technical specification TS 23.501 describes the 5G system architecture. This section presents some of the key architecture models referencing the technical specification.
+
+The interaction between the 5G network functions can be represented in two ways; via the traditional reference point model or service‐based model. The service‐based representation refers to the network functions within the control plane enabling other network functions to access their services. The reference point representation, in turn, depicts the interaction between the NF services in the network functions.
+
+The NFs have thus both functional behavior and interface. Each NF can be deployed as a dedicated hardware forming the network element, or as a software instance that is relying on a hardware. Furthermore, the NF can also be implemented as a virtualized function instantiated on a relevant platform such as in a cloud‐based infrastructure.
+
+4.2.8 Network Functions (NF)
+
+The 5G architecture consists of RAN basing on the NR interface, and NGC (next‐generation core) that has renewed network elements. The access into 5G network can also take place via non‐3GPP access network (AN). AN refers thus to a general radio base station, including non‐3GPP access such as Wi‐Fi.
+
+The accessing device is the UE, which is formed by the mobile terminal (MT) and a tamper‐resistant secure element (SE), which may have a form of “traditional” UICC (universal integrated circuit card), commonly known as SIM card (subscriber identity module), or its evolved variant such as embedded universal integrated circuit card (eUICC). If the UE connects to a data network (DN), it can be, e.g. operator services, Internet access, or third‐party services.
+
+The 5G system (5GS) architecture consists of a set of network functions (NF), of which each has their own defined task. The 3GPP TS 23.501 includes the functional description of these network functions that are listed in Table 4.1 and detailed in the next sections.
+
+NF 	Description 	Mapping with 4G
+5G‐EIR 	Equipment identity register 	Evolution of LTE EIR
+AF 	Application function 	Application layer of 5G, comparable with the LTE AS and gsmSCF
+AMF 	Access and mobility management function 	Replaces the LTE MME
+AUSF 	Authentication server function 	Replaces the LTE MME/AAA
+NEF 	Network exposure function 	Evolution of SCEF and application programming interfaces (APIs) layer
+NRF 	NF repository function 	Part of the evolution of DNS
+NSSF 	Network slice selection function 	New function for 5G‐specific network slicing concept
+PCF 	Policy control function 	Evolution of the LTE PCRF (policy and charging enforcement function)
+SEPP 	Security edge protection proxy 	New element for securely interconnecting 5G networks
+SMF 	Session management function 	Replaces together with the 5G UPF the LTE S‐GW and P‐GW
+UDM 	Unified data management 	Evolution of HSS and UDR
+UDR 	Unified data repository 	Evolution of the LTE SDS (structured data storage)
+UDSF 	Unstructured data storage function 	The function comparable with LTE SDSF (structured data storage network function)
+UPF 	User plane function 	Replaces together with the SMF the LTE S‐GW and P‐GW
+
+It can be seen, based on Table 4.1, that some of the functional elements represent a major change to the LTE while others are merely a more “peaceful” evolution by adding performance and functionality to support the new network. The most significant changes are related to S‐GW and P‐GW elements, referred to as S/P‐GW in the collocated form, which now is divided into a user plane via the UPF and into control plane via the SMF. Equally, the evolution of the Authentication, Authorization and Accounting‐Home Subscription Server (AAA‐HSS) results in renewed Authentication Server Function‐Unified Data Management (AUSF‐UDM), and the data storage is now, in the 5G era, taken care of by the Structured Data Storage Network Function (SDSF) and the Unified Data Repository (UDR) (Figure 4.10).
+
+//Figure 4.10
+
+Figure 4.10 The comparison of functional elements of the 4G and 5G. Please note that in this figure, the EPC elements are shown only for indicating the similarities with the respective 5G elements, but this is not the actual interworking architecture.
+
+
+4.2.9 Architecture of 5G
+
+The great difference between the previous generations and the new 5G is that the system architecture of the latter can be service based. That refers to the possibility, wherever suitable, for defining the architecture elements as network functions (NF) offering their specially designed services via common framework interfaces to any other network function if they have permission to do rely on the respective, offered services. So, as in 4G EPC, there are defined protocol and reference points for each entity, like S‐GW, P‐GW, and MME, whereas in the 5G, these protocol and reference points are defined for all the available NFs. In order to understand if the NF has certain rights, the NRFs are defined. They allow network functions to discover the services offered by other network functions.
+
+The service‐based architecture model provides highly modular and reusable approach for the 5G network deployments. It thus allows MNOs to deploy the 5G gradually, benefiting from the latest advancements of the virtualization concept. The service‐based architecture contains the core network functions by interconnecting them simply with the rest of the system. Figure 4.11 presents the visual model for depicting the service‐based architecture, combined with the reference point‐based architecture elements. The latter shows the interactions between network functions to inform about the system level functionality, as well as inter‐PLMN interconnection via different network functions.
+
+//Figure 4.11
+
+4.2.9.1 Roaming and Non‐Roaming 5G Architecture
+
+Figure 4.11 shows the reference architecture of the 5G network basing on the service‐based interfaces and Figure 4.12 shows the alternative format of the nonroaming network architecture basing on the reference point representation. In addition to the presented elements, the full architecture also contains the rest of the network functions listed in Table 4.1. All the presented network functions are capable of interacting with the UDSF (Unstructured Data Storage Function), UDR, NEF (Network Exposure Function) and NRF (NF Repository Function) when appropriate.
+
+// Figure 4.12
+
+Figure 4.12 Reference point presentation of the 5G system architecture for the non‐roaming case [4].
+
+In Figure 4.11, the terms described in Table 4.1, the tasks of the presented elements are the following; the more detailed description of the elements cab be found in 3GPP TS 23.501 [4].
+
+    UE represents consumer device like smart device, or Internet of Things (IoT) device such as machine‐to‐machine (M2M) device. It comprises the device (HW and SW) and the tamper‐resistant secure element such as UICC.
+    AN/RAN is the 5G NR access network or other access network, including Wi‐Fi access.
+    UPF is the user plane function. UPF interacts between the 5G network and external data network, supporting PDU Session Anchor functionality. Its role is thus to act as an external PDU Session point of interconnect to the data network. It does not provide any services in the Release 15 3GPP technical specifications, but it can consume services provided by 5GC Control Plane NFs. UPF Service Area refers to an area within which PDU Session associated with the UPF can be served by AN and RAN nodes via an N3 interface between the access network and the UPF without need to add a new UPF in between or to remove or reallocate the UPF. Uplink classifier (UL‐CL) is UPF functionality that aims at diverting uplink traffic, based on filter rules provided by SMF, toward the data network. Please note that a single UE may establish multiple PDU Sessions to the same data network and served by different UPF terminating N6.
+
+The functional elements of the Figure 4.11 have the following tasks:
+
+    AMF is access and mobility management function. It has multitude of functions, including registration, connection, reachability and mobility management. It also participates in access authentication and authorization, providing security anchor functionality (SEAF). It interacts with the Authentication Server Function (AUSF) and the UE, receives the intermediate key from the UE authentication process. If universal subscriber identity module (USIM‐based authentication takes place, it retrieves the security material from the AUSF. It also performs security context management (SCM) by receiving a key from the SEAF to derive access network‐specific keys. It also stores the UE capability list, performs load balancing, and interacts with SMF.
+    SMF takes care of session management and roaming functionality, among a multitude of tasks. It establishes, modifies, and releases sessions. It manages UE's IP addresses and Dynamic Host Control Protocol (DHCP) v4/v6 server and client functions.
+    NEF takes care of the exposure of capabilities and events, among many other tasks. It stores and retrieves information as structured data. It also makes secure provision of information from external application to 3GPP network.
+    AUSF supports authentication procedures as specified by SA WG3.
+    NSSF is Network Slice Selection Function. selects the set of NS instances serving the UE, determines the allowed NSSAI, configured NSSAI, and the AMF set to be used to serve the UE or a list of candidate AMF(s).
+    Policy Control Function (PCF) supports unified policy framework to govern network behavior and provides policy rules to control plane functions.
+    NRF supports service discovery function and maintains the NF profile of available NF instances and their supported services.
+    Unified data management (UDM) generates 3GPP Authentication and Key Agreement (AKA) authentication credentials. It handles user identification by storing and managing subscription permanent identifiers (SUPIs) per 5G subscriber. It also manages Short Message Service (SMS).
+    AF is application function, which interacts with the 3GPP core network to provide services such as application influence on traffic routing, access to NEF, and interaction with the policy framework.
+
+The other participating elements not shown in this figure include the following, with the respective tasks:
+
+    UDSF is Unified Data Repository, which supports, e.g. storage and retrieval of subscription data by the UDM, storage and retrieval of policy data by the PCF, and storage and retrieval of structured data by the NEF. UDSF is located in the same PLMN as the NF in such a way that service consumers store in and retrieve data from it via Nudr (intra‐PLMN interface). The UDR may collocate with UDSF.
+    UDR is an optional function for storage and retrieval of information as unstructured data by any NF.
+
+There may also be other functional elements such as the Short Message Service Function (SMSF), which supports SMS over NAS, 5G‐Equipment Identity Register (5G‐EIR) to check the status of PEI blacklisting, Location Management Function (LMF) for UEs location determination and measurements of UE while Network Data Analytics Function (NWDAF) represents operator managed network analytics logical function.
+
+Figure 4.13 presents another variant of the Figure 4.11, now with a roaming case.
+//FIgure 4.13
+
+Figure 4.13 An example of the 5G architecture in a roaming case, presented using service‐based interfaces.
+
+
+////////////CONTINUE ANKI AND BOOK HERE!!!!!!!!!!!
+
+
+Figure 4.13 shows the service‐based architecture for a roaming basing on local breakout (LBO). In LBO scenario the SMF and all UPF(s) involved by the PDU Session are under control of the visited public land mobile network (VPLMN). In this scenario, the UE, which is roaming in visited network (VPLMN), establishes connection to the data network of the VPLMN while the home public land mobile network (HPLMN) enables the connectivity basing on the user's subscription information (UDM), subscriber authentication (AUSF) and policies (PCF) for this specific UE. The interworking between HPLMN and VPLMN is protected by home security edge protection proxy (hSEPP) and visited network's security proxy (vSEPP). The Security Edge Protection Proxy (SEPP) is nontransparent proxy and supports message filtering and policing on inter‐PLMN control plane interfaces, and topology hiding.
